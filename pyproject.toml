@@ -1,0 +1,21 @@
+[project]
+name = "teste_filtro"
+version = "0.1.0"
+description = "teste finalizados"
+authors = [
+    {name = "", email = ""},
+]
+dependencies = [
+    "django>=5.0.6",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
