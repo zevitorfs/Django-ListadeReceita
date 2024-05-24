@@ -26,7 +26,7 @@
         body{
             font-size: 1.6rem;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background: grey;
+            background: rgb(235, 233, 233);
         }
         h1,h2,h3,h4,h5,h6{
             font-family: 'Roboto Slab', serif;
@@ -59,6 +59,63 @@
             margin-right: 2rem;
 
         }
+
+        .search-form{
+            border: .2rem solid;
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: 4rem;
+            position: relative;
+            transition: all 300ms ease-in-out ;
+            
+        }
+
+        .search-input,
+        .search-button{
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+        }
+
+        .search-button{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .search-input{
+            width: 100%;
+            padding-right: 4rem;
+        }
+
+        .search-button:focus{
+            outline: 1px solid gray;
+            background: rgba(0, 0, 0, .05);
+        }
+
+        .search-form:focus-within{
+            border-color: rgb(0, 54, 153);
+            background-color: white;
+        }
+
+        .search-form:focus-within .search-button{
+            border-color:rgb(0, 54, 153);
+        }
+
+        
+        .main-content{
+            padding-top: 0;
+        }
+
+        .main-content-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 4rem;
+
+        }
+
+
        
     </style>
 </head>
